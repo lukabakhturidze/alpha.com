@@ -11,6 +11,8 @@
     --larger-text-line-height: 21px;
     --extra-larger-text-font-size: 21px;
     --extra-larger-text-line-height: 23px;
+    --two-times-extra-larger-text-font-size: 28px;
+    --two-times-extra-larger-text-line-height: 40px;
 }
 /* for common classes> */
 .flex-container{
@@ -47,12 +49,17 @@
     color: var(--primary-text-color);
     text-align: center;
 }
-.exrta-larger-text-size{
+.extra-larger-text-size{
     font-size: var(--extra-larger-text-font-size);
     line-height: var(--extra-larger-text-line-height);
     font-family: 'helvetica-medium';
     color: var(--primary-text-color);
     text-align: center;
+}
+.two-times-extra-larger-text-size{
+    font-size: var(--two-times-extra-larger-text-font-size);
+    line-height: var(--two-times-extra-larger-text-line-height);
+    font-family: 'helvetica-regular';
 }
 .common-section{
     margin-bottom: 8vh;
@@ -68,6 +75,32 @@
 .common-section-title-description{
     margin-bottom: 4vh;
 }
+.common-button{
+    padding: 7px 15px; 
+    background-color: var(--primary-red);
+    border: 1px solid var(--primary-red);
+    border-radius: 6px;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.common-button:hover{
+    transform: scale(1.1);
+}
+.first-type-section-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr) auto;
+    column-gap: 3.1%;
+    align-items: center;
+}
+.first-type-section-bottom-wrapper{
+    margin-top: 50px;
+}
+.second-type-section-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 /* <for common classes */
 body{
     background-color:var(--primary-background-color);
@@ -82,6 +115,7 @@ body{
 }
 header{
     padding: 27px 0;
+    margin-bottom: 10vh;
 }
 header .header-nav-middle-li, header .title-size, header img{
     transition: all 0.2s;
@@ -140,7 +174,6 @@ header img:hover{
 }
 .introduction-bottom-wrapper{
     position: relative;
-    margin-top: 10vh;
 }
 .introduction-secondary-navigation-ul{
     display: flex;
@@ -182,17 +215,6 @@ header img:hover{
 }
 /* <for introduction section */
 /* for "ჩვენი  სერვისები შენთვის" section> */
-
-.first-type-section-grid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto repeat(3, 1fr) auto;
-    column-gap: 3.1%;
-    align-items: center;
-}
-.first-type-section-bottom-wrapper{
-    margin-top: 50px;
-}
 .our-services-for-you-section-card{
     height: 32vh;
     max-height: 240px;
@@ -223,18 +245,7 @@ header img:hover{
     align-items: center;
     justify-content: space-between;
 }
-.our-services-for-you-card-button{
-    padding: 7px 15px; 
-    background-color: var(--primary-red);
-    border: 1px solid var(--primary-red);
-    border-radius: 6px;
-    color: white;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-.our-services-for-you-card-button:hover{
-    transform: scale(1.1);
-}
+
 .first-type-section-grid .arrow{
     cursor: pointer;
     transition: all 0.2s;
@@ -244,10 +255,7 @@ header img:hover{
 }
 /* <for "ჩვენი  სერვისები შენთვის" section */ 
 /* for why us section> */
-.second-type-section-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+
 .why-us-section-card{
     display: flex;
     flex-direction: column;
@@ -276,6 +284,8 @@ header img:hover{
     justify-content: space-between;
     padding: 20px;
     background-color: white;
+    box-shadow: 1px 1px 6px #00000029;
+    border-radius: 6px;
 }
 .our-clients-top-img{
     width: max-content;
@@ -310,7 +320,7 @@ header img:hover{
 /* for footer> */
 footer{
     background-color: var(--primary-red);
-    padding: 70px 0;
+    padding: 40px 0 20px 0;
 }
 .footer-top-wrapper{
     display: flex;
@@ -369,7 +379,8 @@ footer .smaller-text-size:hover, footer .larger-text-size:hover, footer .exrta-l
     column-gap: 3.49vw;
 }
 .footer-info-column h5{
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 .footer-info-column-ul{
     display: flex;
@@ -386,8 +397,121 @@ footer .smaller-text-size:hover, footer .larger-text-size:hover, footer .exrta-l
     display: flex;
     column-gap: 30px;
 }
+.extra-bottom-footer{
+    margin-top: 4vh;
+}
 /* <for footer */
-
-
-
-
+/* for health ensurance introduction section> */
+.health-ensurance-introduction-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.health-ensurance-introduction-section .extra-larger-text-size,.health-ensurance-introduction-section .larger-text-size,.health-ensurance-introduction-section .smaller-text-size,.health-ensurance-introduction-section .title-size{
+    text-align: left;
+}
+.health-ensurance-introduction-section-left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.health-ensurance-introduction-buttons-wrapper{
+    margin-top: 30px;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.health-ensurance-introduction-section-right{
+    padding: 1.3vw 1.3vw 1vh 1.3vw;
+    background-color: var(--section-title-background-color);
+}
+.health-ensurance-introduction-section-right img{
+    max-width: 800px;
+    min-width: 250px;
+    width: 45vw;
+}
+.health-ensurance-introduction-section-slide-ul{
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    margin-top: 1vh;
+}
+.health-ensurance-introduction-section-slide-li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: white;
+}
+.health-ensurance-introduction-section-slide-li:nth-child(1){
+    background-color: red;
+}
+/* <for health ensurance introduction section */
+/* <for health ensurance offers section */
+.health-ensurance-offer-card img{
+    width: 100%;
+    border-radius: 6px;
+}
+.health-ensurance-offer-card{
+    height: 80vh;
+    max-height: 603px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 5vh;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 6px;
+}
+.health-ensurance-offer-card .larger-text-size{
+    color: var(--primary-red);
+    height: 7vh;
+}
+.health-ensurance-offer-card .smaller-text-size{
+    line-height: 24px;
+    height: 28vh;
+}
+.health-ensurance-offer-card button{
+    margin-top: 3vh;
+}
+/* <for health ensurance offers section */
+/* for health ensurance programs section> */
+.health-ensurance-program-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    padding: 10px 30px 20px 30px;
+    background-color: var(--primary-red);
+    border-radius: 6px;
+}
+.health-ensurance-program-card > .larger-text-size,.health-ensurance-program-card-botton-wrapper .smaller-text-size {
+    color: white;
+}
+.health-ensurance-program-card-middle-wrapper{
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 6px;
+    background-color: white;
+}
+.health-ensurance-program-row-line{
+    display: flex;
+    justify-content: space-between;
+}
+.health-ensurance-program-card-botton-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+/* <for health ensurance programs section */
+.create-program .extra-larger-text-size{
+    margin-bottom: 3vh;
+}

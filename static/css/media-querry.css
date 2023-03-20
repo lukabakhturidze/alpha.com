@@ -7,6 +7,8 @@
     --mobile-larger-text-line-height: 13px;
     --mobile-extra-larger-text-font-size: 14px;
     --mobile-extra-larger-text-line-height: 15px;
+    --mobile-two-times-extra-larger-text-font-size: 14px;
+    --mobile-two-times-extra-larger-text-line-height: 20px;
 }
 @media(max-width: 1280px){
     .right-header{
@@ -20,6 +22,29 @@
         justify-content: normal;
         row-gap: 30px;
     }
+    .health-ensurance-introduction-buttons-wrapper{
+        margin-top: 2vh;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+    .health-ensurance-program-card-middle-wrapper{
+        align-items: center;
+        row-gap: 10px;
+    }
+    .health-ensurance-program-row-line{
+        flex-direction: column;
+        row-gap: 5px;
+    }
+}
+@media(max-width: 1125px){
+    .health-ensurance-offer-card{
+        height: 50vh;
+        padding: 20px 15px;
+    }
+    .health-ensurance-offer-card .smaller-text-size{
+        display: none;
+    }
 }
 @media(max-width: 1024px){
     .right-header{
@@ -30,6 +55,23 @@
     }
     .our-clients-card-bottom-ul{
         column-gap: 0;
+    }
+    .health-ensurance-offer-card{
+        height: 60vh;
+    }
+    .health-ensurance-offer-card button{
+        margin-top: 8vh;
+    }
+    .health-ensurance-offer-card .larger-text-size{
+        height: 8.5vh;
+    }
+}
+@media(max-width: 920px){
+    .health-ensurance-offer-card{
+        height: 30vh;
+    }
+    .health-ensurance-offer-card button{
+        margin-top: 2vh;
     }
 }
 @media(max-width: 900px){
@@ -49,7 +91,31 @@
         display: none;
     }
     footer{
-        padding: 40px 0;
+        padding: 25px 0 15px 0;
+    }
+    .health-ensurance-introduction-section{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2vh;
+    }
+    .health-ensurance-introduction-section-right img{
+        width: 89.53vw;
+    }
+    .health-ensurance-introduction-section-slide-li{
+        width: 15px;
+        height: 15px;
+    }
+    .first-type-section-grid .health-ensurance-offer-card:nth-child(3){
+        display: none;
+    }
+    .health-ensurance-offer-card{
+        height: 35vh;
+    } 
+    .health-ensurance-offer-card button{
+        margin-top: 2vh;
+    }
+    .first-type-section-grid .health-ensurance-program-card:nth-child(3){
+        display: none;
     }
 }
 @media(max-width: 768px){
@@ -62,7 +128,7 @@
         font-size: var(--mobile-title-font-size);
         line-height: var(--mobile-title-line-height);
     }
-    .exrta-larger-text-size{
+    .extra-larger-text-size{
         font-size: var(--mobile-extra-larger-text-font-size);
         line-height: var(--mobile-extra-larger-text-line-height);
     }
@@ -76,6 +142,10 @@
     .second-type-section-grid{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 5vh;
+    }
+    .two-times-extra-larger-text-size{
+        font-size: var(--mobile-two-times-extra-larger-text-font-size);
+        line-height: var(--mobile-two-times-extra-larger-text-line-height);
     }
     /* <for common tags */
     .introduction-secondary-navigation-ul{
@@ -106,6 +176,21 @@
     .our-clients-card-bottom-wrapper{
         column-gap: 4%;
     }
+    .first-type-section-grid .health-ensurance-offer-card:nth-child(2){
+        display: none;
+    }
+    .health-ensurance-offer-card{
+        height: 45vh;
+    } 
+    .health-ensurance-offer-card img{
+        width: 70%;
+    }
+    .health-ensurance-offer-card .larger-text-size{
+        height: 4vh;
+    }
+    .first-type-section-grid .health-ensurance-program-card:nth-child(2){
+        display: none;
+    }
 }
 @media(max-width: 660px){
     .footer-top-right-wrapper{
@@ -118,6 +203,22 @@
         align-items: flex-start;
         row-gap: 30px;
     }
+    .health-ensurance-introduction-section-left{
+        flex-direction: column;
+        width: 80vw;
+        align-items: flex-start;
+        row-gap: 2vh;
+    }
+    .health-ensurance-offer-card{
+        height: 45vh;
+    }
+    .health-ensurance-introduction-section-slide-li{
+        width: 10px;
+        height: 10px;
+    }
+    .health-ensurance-program-card{
+        padding: 10px 15px 15px 15px;
+    }
 }
 @media(max-width: 374px){
     .our-clients-card-bottom-wrapper{
@@ -127,5 +228,11 @@
         flex-direction: column;
         column-gap: 0;
         row-gap: 30px;
+    }
+    .health-ensurance-offer-card img{
+        width: 100%;
+    }
+    .health-ensurance-offer-card{
+        height: 40vh;
     }
 }
