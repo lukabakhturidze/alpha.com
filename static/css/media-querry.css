@@ -78,8 +78,15 @@
         align-items: flex-start;
         row-gap: 2vh;
     }
+    .health-ensurance-introduction-section-right{
+        width: 100%;
+        padding: 3vw 3vw 1.5vw 3vw;
+    }
     .health-ensurance-introduction-section-right img{
-        width: 89.53vw;
+        width: 100%;
+    }
+    .health-ensurance-introduction-section-slide-ul{
+        margin-top: 10px;
     }
     .health-ensurance-introduction-section-slide-li{
         width: 15px;
@@ -149,6 +156,9 @@
     }
     .our-clients-card-bottom-wrapper{
         column-gap: 4%;
+    }
+    .health-ensurance-introduction-section-slide-ul{
+        margin-top: 6px;
     }
     .first-type-section-grid .health-ensurance-offer-card:nth-child(2){
         display: none;

@@ -411,7 +411,7 @@ footer .smaller-text-size:hover, footer .larger-text-size:hover, footer .exrta-l
     text-align: left;
 }
 .health-ensurance-introduction-section-left{
-    width: 35%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
@@ -424,19 +424,18 @@ footer .smaller-text-size:hover, footer .larger-text-size:hover, footer .exrta-l
     column-gap: 10px;
 }
 .health-ensurance-introduction-section-right{
-    padding: 1.3vw 1.3vw 1vh 1.3vw;
+    padding: 30px 30px 15px 30px;
     background-color: var(--section-title-background-color);
 }
 .health-ensurance-introduction-section-right img{
-    max-width: 800px;
-    min-width: 250px;
+    max-width: 700px;
     width: 45vw;
 }
 .health-ensurance-introduction-section-slide-ul{
     display: flex;
     column-gap: 15px;
     justify-content: center;
-    margin-top: 1vh;
+    margin-top: 15px;
 }
 .health-ensurance-introduction-section-slide-li{
     width: 10px;
